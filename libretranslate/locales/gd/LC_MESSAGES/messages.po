@@ -1,4 +1,4 @@
-# Slovenian translations for LibreTranslate.
+# Translations template for LibreTranslate.
 # Copyright (C) 2024 LibreTranslate Authors
 # This file is distributed under the same license as the LibreTranslate
 # project.
@@ -6,51 +6,54 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreTranslate 1.6.1\n"
+"Project-Id-Version: LibreTranslate 1.6.2\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-10-16 23:47+0200\n"
-"PO-Revision-Date: 2024-08-08 13:03-0400\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: sl <LL@li.org>\n"
-"Language: sl\n"
+"PO-Revision-Date: 2024-10-23 17:15+0000\n"
+"Last-Translator: GunChleoc <fios@foramnagaidhlig.net>\n"
+"Language-Team: Gaelic <https://hosted.weblate.org/projects/libretranslate/"
+"app/gd/>\n"
+"Language: gd\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: libretranslate/app.py:80
 msgid "Invalid JSON format"
-msgstr "Neveljavna oblika JSON"
+msgstr "Fòrmat JSON mì-dhligheach"
 
 #: libretranslate/app.py:180 libretranslate/templates/app.js.template:467
 msgid "Auto Detect"
-msgstr "Samodejno zaznaj"
+msgstr "Fèin-mhothaich"
 
 #: libretranslate/app.py:273
 msgid "Unauthorized"
-msgstr "Nepooblaščen"
+msgstr "Gun chead"
 
 #: libretranslate/app.py:291
 msgid "Too many request limits violations"
-msgstr "Preveč zahtevkov omejuje kršitve"
+msgstr "Chuirear cus iarrtasan thar na tha ceadaiche"
 
 #: libretranslate/app.py:298
 msgid "Invalid API key"
-msgstr "Neveljaven ključ API"
+msgstr "Iuchair API mhì-dhligheach"
 
 #: libretranslate/app.py:324
 msgid "Please contact the server operator to get an API key"
-msgstr "Prosimo kontaktirajte operaterja strežnika, da dobite API ključ"
+msgstr "Cuir fios gu obraiche an fhrithealaiche airson iuchair API fhaighinn"
 
 #: libretranslate/app.py:326
 #, python-format
 msgid "Visit %(url)s to get an API key"
-msgstr "Obisk %(url)s dobiti API ključ"
+msgstr "Tadhail air %(url)s a dh’fhaighinn iuchair API"
 
 #: libretranslate/app.py:373
 msgid "Slowdown:"
-msgstr "Upočasni:"
+msgstr "Maille:"
 
 #: libretranslate/app.py:606 libretranslate/app.py:608
 #: libretranslate/app.py:610 libretranslate/app.py:819
@@ -60,120 +63,122 @@ msgstr "Upočasni:"
 #: libretranslate/app.py:1143
 #, python-format
 msgid "Invalid request: missing %(name)s parameter"
-msgstr "Neveljaven zahtevek: manjka %(name)s parameter"
+msgstr "Iarrtas mì-dhligheach: tha am paramadair %(name)s a dhìth"
 
 #: libretranslate/app.py:615
 #, python-format
 msgid "Invalid request: %(name)s parameter is not a number"
-msgstr "Neveljavna zahteva: %(name)s parameter ni številka"
+msgstr "Iarrtas mì-dhligheach: chan eil am paramadair %(name)s ’na àireamh"
 
 #: libretranslate/app.py:618
 #, python-format
 msgid "Invalid request: %(name)s parameter must be <= %(value)s"
 msgstr ""
-"Neveljavna zahteva: %(name)s Parameter mora biti pomanjkljiv %(value)s"
+"Iarrtas mì-dhligheach: feumaidh am paramadair %(name)s a bhith <= %(value)s"
 
 #: libretranslate/app.py:635 libretranslate/app.py:645
 #, python-format
 msgid "Invalid request: request (%(size)s) exceeds text limit (%(limit)s)"
 msgstr ""
-"Neveljavna zahteva: zahteva (%(size)s) presega mejo besedila (%(limit)s)"
+"Iarrtas mì-dhligheach: tha teacsa an iarrtais (%(size)s) thair na crìche de "
+"(%(limit)s)"
 
 #: libretranslate/app.py:660 libretranslate/app.py:665
 #: libretranslate/app.py:834 libretranslate/app.py:839
 #, python-format
 msgid "%(lang)s is not supported"
-msgstr "%(lang)s ni podprto"
+msgstr "Chan eil taic ri %(lang)s"
 
 #: libretranslate/app.py:671
 #, python-format
 msgid "%(format)s format is not supported"
-msgstr "%(format)s oblika ni podprta"
+msgstr "Chan eil taic ris an fhòrmat %(format)s"
 
 #: libretranslate/app.py:680 libretranslate/app.py:704
 #, python-format
 msgid ""
-"%(tname)s (%(tcode)s) is not available as a target language from %(sname)s "
-"(%(scode)s)"
+"%(tname)s (%(tcode)s) is not available as a target language from "
+"%(sname)s (%(scode)s)"
 msgstr ""
-"%(tname)s (%(tcode)s) ni na voljo kot ciljni jezik %(sname)s (%(scode)s)"
+"Chan eil %(tname)s (%(tcode)s) ri fhaighinn ’na chànan-amais o %(sname)s "
+"(%(scode)s)"
 
 #: libretranslate/app.py:724
 #, python-format
 msgid "Cannot translate text: %(text)s"
-msgstr "Ni moč prevesti besedila: %(text)s"
+msgstr "Chan urrainn dhuinn an teacsa seo eadar-theangachadh: %(text)s"
 
 #: libretranslate/app.py:811 libretranslate/app.py:872
 msgid "Files translation are disabled on this server."
-msgstr "Prevajanje datotek je onemogočeno na tem strežniku."
+msgstr "Tha eadar-theangachaidh fhaidhlichean à comas air an frithealaiche seo."
 
 #: libretranslate/app.py:826
 msgid "Invalid request: empty file"
-msgstr "Neveljavna zahteva: prazna datoteka"
+msgstr "Iarrtas mì-dhligheach: faidhle falamh"
 
 #: libretranslate/app.py:829
 msgid "Invalid request: file format not supported"
-msgstr "Neveljaven zahtevek: oblika datoteke ni podprta"
+msgstr "Iarrtas mì-dhligheach: Cha chuir sinn taic ri fòrmat an fhaidhle"
 
 #: libretranslate/app.py:880
 msgid "Invalid filename"
-msgstr "Neveljavno ime datoteke"
+msgstr "Ainm faidhle mì-dhligheach"
 
 #: libretranslate/app.py:1122
 msgid "Suggestions are disabled on this server."
-msgstr "Predlogi so onemogočeni na tem strežniku."
+msgstr "Tha molaidhean à comas air an frithealaiche seo."
 
 #: libretranslate/locales/.langs.py:1
 msgid "English"
-msgstr "Angleščina"
+msgstr "Beurla"
 
 #: libretranslate/locales/.langs.py:2
 msgid "Albanian"
-msgstr "AlbanskoName"
+msgstr "Albàinis"
 
 #: libretranslate/locales/.langs.py:3
 msgid "Arabic"
-msgstr "Arabščina"
+msgstr "Arabais"
 
 #: libretranslate/locales/.langs.py:4
 msgid "Azerbaijani"
-msgstr "Azerbajdžan"
+msgstr "Asarbaideànais"
 
 #: libretranslate/locales/.langs.py:5
 msgid "Basque"
-msgstr "BaskovskoName"
+msgstr "Basgais"
 
 #: libretranslate/locales/.langs.py:6
 msgid "Bengali"
-msgstr "Bengalska"
+msgstr "Beangailis"
 
 #: libretranslate/locales/.langs.py:7
 msgid "Bulgarian"
-msgstr "Bolgarščina"
+msgstr "Bulgarais"
 
 #: libretranslate/locales/.langs.py:8
 msgid "Catalan"
-msgstr "Katalonščina"
+msgstr "Catalanais"
 
 #: libretranslate/locales/.langs.py:9
 msgid "Chinese"
-msgstr "Kitajska"
+msgstr "Sìnis"
 
 #: libretranslate/locales/.langs.py:10
 msgid "Chinese (traditional)"
-msgstr "Kitajska (tradicionalna)"
+msgstr "Sìnis (thradaiseanta)"
 
 #: libretranslate/locales/.langs.py:11
 msgid "Czech"
-msgstr "Češka"
+msgstr "Seacais"
 
 #: libretranslate/locales/.langs.py:12
 msgid "Danish"
-msgstr "Danski"
+msgstr "Danmhairgis"
 
 #: libretranslate/locales/.langs.py:13
 msgid "Dutch"
-msgstr "Nizozemska"
+msgstr "Duitsis"
 
 #: libretranslate/locales/.langs.py:14
 msgid "Esperanto"
@@ -181,111 +186,111 @@ msgstr "Esperanto"
 
 #: libretranslate/locales/.langs.py:15
 msgid "Estonian"
-msgstr "Estonščina"
+msgstr "Eastoinis"
 
 #: libretranslate/locales/.langs.py:16
 msgid "Finnish"
-msgstr "Finska"
+msgstr "Fionnlannais"
 
 #: libretranslate/locales/.langs.py:17
 msgid "French"
-msgstr "Francoski"
+msgstr "Fraingis"
 
 #: libretranslate/locales/.langs.py:18
 msgid "Galician"
-msgstr "Galščina"
+msgstr "Gailìsis"
 
 #: libretranslate/locales/.langs.py:19
 msgid "German"
-msgstr "Nemščina"
+msgstr "Gearmailtis"
 
 #: libretranslate/locales/.langs.py:20
 msgid "Greek"
-msgstr "Grščina"
+msgstr "Greugais"
 
 #: libretranslate/locales/.langs.py:21
 msgid "Hebrew"
-msgstr "Hebrejsko"
+msgstr "Eabhra"
 
 #: libretranslate/locales/.langs.py:22
 msgid "Hindi"
-msgstr "Hindi"
+msgstr "Hindis"
 
 #: libretranslate/locales/.langs.py:23
 msgid "Hungarian"
-msgstr "Madžarska"
+msgstr "Ungairis"
 
 #: libretranslate/locales/.langs.py:24
 msgid "Indonesian"
-msgstr "Indonezijski"
+msgstr "Innd-Innsis"
 
 #: libretranslate/locales/.langs.py:25
 msgid "Irish"
-msgstr "Irska"
+msgstr "Gaeilge"
 
 #: libretranslate/locales/.langs.py:26
 msgid "Italian"
-msgstr "Italijanska"
+msgstr "Eadailtis"
 
 #: libretranslate/locales/.langs.py:27
 msgid "Japanese"
-msgstr "Japonka"
+msgstr "Seapanais"
 
 #: libretranslate/locales/.langs.py:28
 msgid "Korean"
-msgstr "Korejska"
+msgstr "Coirèanais"
 
 #: libretranslate/locales/.langs.py:29
 msgid "Latvian"
-msgstr "Latvijščina"
+msgstr "Laitbheis"
 
 #: libretranslate/locales/.langs.py:30
 msgid "Lithuanian"
-msgstr "Litva"
+msgstr "Liotuainis"
 
 #: libretranslate/locales/.langs.py:31
 msgid "Malay"
-msgstr "Malay"
+msgstr "Malaidhis"
 
 #: libretranslate/locales/.langs.py:32
 msgid "Norwegian"
-msgstr "Norveška"
+msgstr "Nirribhis"
 
 #: libretranslate/locales/.langs.py:33
 msgid "Persian"
-msgstr "Perzijščina"
+msgstr "Pearsais"
 
 #: libretranslate/locales/.langs.py:34
 msgid "Polish"
-msgstr "Poljska"
+msgstr "Pòlainnis"
 
 #: libretranslate/locales/.langs.py:35
 msgid "Portuguese"
-msgstr "Portugalščina"
+msgstr "Portagailis"
 
 #: libretranslate/locales/.langs.py:36
 msgid "Romanian"
-msgstr "Romunska"
+msgstr "Romàinis"
 
 #: libretranslate/locales/.langs.py:37
 msgid "Russian"
-msgstr "Ruščina"
+msgstr "Ruisis"
 
 #: libretranslate/locales/.langs.py:38
 msgid "Slovak"
-msgstr "Slovaščina"
+msgstr "Slòbhacais"
 
 #: libretranslate/locales/.langs.py:39
 msgid "Slovenian"
-msgstr "Slovenski"
+msgstr "Slòbhainis"
 
 #: libretranslate/locales/.langs.py:40
 msgid "Spanish"
-msgstr "Španščina"
+msgstr "Spàinntis"
 
 #: libretranslate/locales/.langs.py:41
 msgid "Swedish"
-msgstr "Švedska"
+msgstr "Suainis"
 
 #: libretranslate/locales/.langs.py:42
 msgid "Tagalog"
@@ -293,87 +298,87 @@ msgstr "Tagalog"
 
 #: libretranslate/locales/.langs.py:43
 msgid "Thai"
-msgstr "Tajska"
+msgstr "Tàidh"
 
 #: libretranslate/locales/.langs.py:44
 msgid "Turkish"
-msgstr "Turška"
+msgstr "Turcais"
 
 #: libretranslate/locales/.langs.py:45
 msgid "Ukranian"
-msgstr "Ukranian"
+msgstr ""
 
 #: libretranslate/locales/.langs.py:46
 msgid "Urdu"
-msgstr "Urdu"
+msgstr "Ùrdu"
 
 #: libretranslate/locales/.langs.py:47
 msgid "Serbian"
-msgstr "Srbska"
+msgstr "Sèirbis"
 
 #: libretranslate/locales/.langs.py:48
 msgid "Ukrainian"
-msgstr "Ukrajinski"
+msgstr "Ucràinis"
 
 #: libretranslate/locales/.langs.py:49
 msgid "Vietnamese"
-msgstr "Vietnamec"
+msgstr "Bhiet-Namais"
 
 #: libretranslate/locales/.swag.py:1
 msgid "Retrieve list of supported languages"
-msgstr "Pridobi seznam podprtih jezikov"
+msgstr "Faigh liosta nan cànan ris a bheil taic"
 
 #: libretranslate/locales/.swag.py:2
 msgid "List of languages"
-msgstr "Seznam jezikov"
+msgstr "Liosta nan cànan"
 
 #: libretranslate/locales/.swag.py:3
 msgid "translate"
-msgstr "prevedi"
+msgstr "eadar-theangaich"
 
 #: libretranslate/locales/.swag.py:4
 msgid "Translate text from a language to another"
-msgstr "Prevedi besedilo iz jezika v jezik"
+msgstr "Eadar-theangaich teacsa on dàrna cànan gun chànan eile"
 
 #: libretranslate/locales/.swag.py:5 libretranslate/templates/index.html:224
 msgid "Translated text"
-msgstr "Prevedeno besedilo"
+msgstr "Teacsa air eadar-theangachadh"
 
 #: libretranslate/locales/.swag.py:6
 msgid "Invalid request"
-msgstr "Neveljavna zahteva"
+msgstr "Iarrtas mì-dhligheach"
 
 #: libretranslate/locales/.swag.py:7
 msgid "Translation error"
-msgstr "Napaka pri prevajanju"
+msgstr "Mearachd eadar-theangachaidh"
 
 #: libretranslate/locales/.swag.py:8
 msgid "Slow down"
-msgstr "Počasi"
+msgstr "Maille"
 
 #: libretranslate/locales/.swag.py:9
 msgid "Banned"
-msgstr "Prepovedano"
+msgstr "Toirmeasg"
 
 #: libretranslate/locales/.swag.py:10
 msgid "Hello world!"
-msgstr "Pozdravljen svet!"
+msgstr "Shin thu, a shaoghail!"
 
 #: libretranslate/locales/.swag.py:11
 msgid "Text(s) to translate"
-msgstr "Besedilo za prevajanje"
+msgstr "Teacsa no dhà ri eadar-theangachadh"
 
 #: libretranslate/locales/.swag.py:12
 msgid "Source language code"
-msgstr "Koda izvornega jezika"
+msgstr "Còd a’ chanain thùsail"
 
 #: libretranslate/locales/.swag.py:13
 msgid "Target language code"
-msgstr "Oznaka ciljnega jezika"
+msgstr "Còd a’ chanain-amais"
 
 #: libretranslate/locales/.swag.py:14
 msgid "text"
-msgstr "besedilo"
+msgstr "teacsa"
 
 #: libretranslate/locales/.swag.py:15
 msgid "html"
@@ -385,155 +390,156 @@ msgid ""
 " * `text` - Plain text\n"
 " * `html` - HTML markup\n"
 msgstr ""
-"Oblika izvornega besedila:\n"
-"* `besedilo' - navadno besedilo\n"
-"* `html' - pribitek HTML\n"
+"Fòrmat teacsa an tùis:\n"
+" * `text` – Teacsa lom\n"
+" * `html` – Markup HTML\n"
 
 #: libretranslate/locales/.swag.py:17
 msgid "Preferred number of alternative translations"
-msgstr "Prednostna številka alternativnih prevodov"
+msgstr "An àireamh as fheàrr de roghainnean eadar-theangachaidh"
 
 #: libretranslate/locales/.swag.py:18
 msgid "API key"
-msgstr "Ključ API"
+msgstr "Iuchair API"
 
 #: libretranslate/locales/.swag.py:19
 msgid "Translate file from a language to another"
-msgstr "Prevedi datoteko iz jezika v drug jezik"
+msgstr "Eadar-theangaich faidhle on dàrna cànan gun chànan eile"
 
 #: libretranslate/locales/.swag.py:20
 msgid "Translated file"
-msgstr "Prevedena datoteka"
+msgstr "Faidhle air eadar-theangachadh"
 
 #: libretranslate/locales/.swag.py:21
 msgid "File to translate"
-msgstr "Datoteka za prevajanje"
+msgstr "Am faidhle ri eadar-theangachadh"
 
 #: libretranslate/locales/.swag.py:22
 msgid "Detect the language of a single text"
-msgstr "Zaznaj jezik enega besedila"
+msgstr "Mothaich do chànan aon teacsa"
 
 #: libretranslate/locales/.swag.py:23
 msgid "Detections"
-msgstr "Odkrivanje"
+msgstr "Mothachaidhean"
 
 #: libretranslate/locales/.swag.py:24
 msgid "Detection error"
-msgstr "Napaka pri odkrivanju"
+msgstr "Mearachd mothachaidh"
 
 #: libretranslate/locales/.swag.py:25
 msgid "Text to detect"
-msgstr "Besedilo za odkrivanje"
+msgstr "An teacsa ri mhothachadh"
 
 #: libretranslate/locales/.swag.py:26
 msgid "Retrieve frontend specific settings"
-msgstr "Pridobi posebne nastavitve za prednji konec"
+msgstr "Faigh roghainnean sònraichte a’ frontend"
 
 #: libretranslate/locales/.swag.py:27
 msgid "frontend settings"
-msgstr "nastavitve prednjega okna"
+msgstr "roghainnean a’ frontend"
 
 #: libretranslate/locales/.swag.py:28
 msgid "frontend"
-msgstr "začelje"
+msgstr "frontend"
 
 #: libretranslate/locales/.swag.py:29
 msgid "Submit a suggestion to improve a translation"
-msgstr "Predloži predlog za izboljšanje prevoda"
+msgstr "Cuir a-null moladh airson piseach a thoirt air eadar-theangachadh"
 
 #: libretranslate/locales/.swag.py:30
 msgid "Success"
-msgstr "Uspeh"
+msgstr "Chaidh leis"
 
 #: libretranslate/locales/.swag.py:31
 msgid "Not authorized"
-msgstr "Ni dovoljeno"
+msgstr "Gun ùghdarrachadh"
 
 #: libretranslate/locales/.swag.py:32
 msgid "Original text"
-msgstr "Originalno besedilo"
+msgstr "An teacsa tùsail"
 
 #: libretranslate/locales/.swag.py:33
 msgid "Suggested translation"
-msgstr "Predlagani prevod"
+msgstr "An t-eadar-theangachadh ’ga mholadh"
 
 #: libretranslate/locales/.swag.py:34
 msgid "Language of original text"
-msgstr "Jezik izvirnega besedila"
+msgstr "Cànan an teacsa thùsail"
 
 #: libretranslate/locales/.swag.py:35
 msgid "Language of suggested translation"
-msgstr "Jezik predlaganega prevajanja"
+msgstr "Cànan an eadar-theangachaidh ’ga mholadh"
 
 #: libretranslate/locales/.swag.py:36
 msgid "feedback"
-msgstr "povratne informacije"
+msgstr "beachd thugainn"
 
 #: libretranslate/locales/.swag.py:37
 msgid "Language code"
-msgstr "Jezikovna koda"
+msgstr "Còd a’ chànain"
 
 #: libretranslate/locales/.swag.py:38
 msgid "Human-readable language name (in English)"
-msgstr "Ime jezika, ki ga je mogoče brati (v angleščini)"
+msgstr "Ainm a’ chànain a leughas daoine (sa Bheurla)"
 
 #: libretranslate/locales/.swag.py:39
 msgid "Supported target language codes"
-msgstr "Podprte ciljne jezikovne kode"
+msgstr "Còdan canain-amais ris a chuir sinn taic"
 
 #: libretranslate/locales/.swag.py:40
 msgid "Translated text(s)"
-msgstr "Prevedena besedila"
+msgstr "Teacsa(ichean) air eadar-theangachadh"
 
 #: libretranslate/locales/.swag.py:41
 msgid "Error message"
-msgstr "Sporočilo o napaki"
+msgstr "Teachdaireachd na mearachd"
 
 #: libretranslate/locales/.swag.py:42
 msgid "Reason for slow down"
-msgstr "Razlog za upočasnitev"
+msgstr "Adhbhar na maille"
 
 #: libretranslate/locales/.swag.py:43
 msgid "Translated file url"
-msgstr "Prevedena datoteka url"
+msgstr "URL an fhaidhle air eadar-theangachadh"
 
 #: libretranslate/locales/.swag.py:44
 msgid "Confidence value"
-msgstr "Vrednost zaupanja"
+msgstr "Luach na h-earbsa"
 
 #: libretranslate/locales/.swag.py:45
 msgid "Character input limit for this language (-1 indicates no limit)"
-msgstr "Omejitev vnosa znakov za ta jezik (-1 označuje brez omejitve)"
+msgstr ""
+"Crìoch ion-chur charactaran dhan chànan seo (innsidh -1 nach bi crìoch air)"
 
 #: libretranslate/locales/.swag.py:46
 msgid "Frontend translation timeout"
-msgstr "Zakasnitev prevajanja v začetku"
+msgstr "Crìoch-ùine eadar-theangachadh a’ frontend"
 
 #: libretranslate/locales/.swag.py:47
 msgid "Whether the API key database is enabled."
-msgstr "Ali je omogočena zbirka ključev API."
+msgstr "Co-dhiù a bheil stòr-dàta nan iuchraichean API an comas gus nach eil."
 
 #: libretranslate/locales/.swag.py:48
 msgid "Whether an API key is required."
-msgstr "Ali je potreben ključ API."
+msgstr "Co-dhiù a bheil feum air iuchair API gus nach eil."
 
 #: libretranslate/locales/.swag.py:49
 msgid "Whether submitting suggestions is enabled."
-msgstr "Ali je predlog omogočen."
+msgstr "Co-dhiù a bheil cur a-null mholaidhean an comas gus nach eil."
 
 #: libretranslate/locales/.swag.py:50
 msgid "Supported files format"
-msgstr "Oblika podprtih datotek"
+msgstr "Fòrmatan faidhle ris a bheil taic"
 
 #: libretranslate/locales/.swag.py:51
 msgid "Whether submission was successful"
-msgstr "Ali je bila vloga uspešna"
+msgstr "Co-dhiù an do shoirbhich leis a’ cur a-null gus nach do shoirbhich"
 
 #: libretranslate/templates/app.js.template:31
 #: libretranslate/templates/app.js.template:294
 #: libretranslate/templates/app.js.template:298
 msgid "Copy text"
-msgstr "Kopiraj besedilo"
+msgstr "Dèan lethbhreac dhen teacsa"
 
 #: libretranslate/templates/app.js.template:80
 #: libretranslate/templates/app.js.template:86
@@ -544,61 +550,64 @@ msgstr "Kopiraj besedilo"
 #: libretranslate/templates/app.js.template:487
 #, python-format
 msgid "Cannot load %(url)s"
-msgstr "Ni moč naložiti %(url)s"
+msgstr "Cha ghabh %(url)s a luchdadh"
 
 #: libretranslate/templates/app.js.template:272
 #: libretranslate/templates/app.js.template:342
 #: libretranslate/templates/app.js.template:420
 #: libretranslate/templates/app.js.template:431
 msgid "Unknown error"
-msgstr "Neznana napaka"
+msgstr "Mearachd nach aithne dhuinn"
 
 #: libretranslate/templates/app.js.template:295
 msgid "Copied"
-msgstr "Kopirano"
+msgstr "Chaidh lethbhreac dheth a dhèanamh"
 
 #: libretranslate/templates/app.js.template:339
 msgid ""
-"Thanks for your correction. Note the suggestion will not take effect right "
-"away."
-msgstr "Hvala za popravek. Upoštevajte, da predlog ne bo takoj začel veljati."
+"Thanks for your correction. Note the suggestion will not take effect "
+"right away."
+msgstr ""
+"Mòran taing airson do cheartachadh. Thoir an aire nach bi am moladh an sàs "
+"sa bhad."
 
 #: libretranslate/templates/app.js.template:463
 msgid "No languages available. Did you install the models correctly?"
-msgstr "Jeziki niso na voljo. Ste pravilno namestili modele?"
+msgstr ""
+"Cha eil cànan ri fhaighinn. An do stàlaich thu na modailean mar bu chòir?"
 
 #: libretranslate/templates/app.js.template:530
 #, python-format
 msgid "Type in your API Key. If you need an API key, %(instructions)s"
-msgstr "Vtipkaj svoj API ključ. Če potrebujete API ključ, %(instructions)s"
+msgstr ""
+"Cuir a-steach an iuchair API agad. Ma tha iuchair API a dhìth ort, "
+"%(instructions)s"
 
 #: libretranslate/templates/app.js.template:530
 msgid "press the \"Get API Key\" link."
-msgstr "pritisnite » Get API Key«."
+msgstr "brùth air a’ cheangal “Faigh iuchair API”."
 
 #: libretranslate/templates/app.js.template:530
 msgid "contact the server operator."
-msgstr "kontaktirajte operaterja strežnika."
+msgstr "cuir fios gu obraiche an fhrithealaiche."
 
-#: libretranslate/templates/index.html:9
-#: libretranslate/templates/index.html:27
+#: libretranslate/templates/index.html:9 libretranslate/templates/index.html:27
 #: libretranslate/templates/index.html:338
 msgid "Free and Open Source Machine Translation API"
-msgstr "Brezplačno in odprtokodno strojno prevajanje API"
+msgstr "API saor airson eadar-theangachadh inneil le bun-tùs fosgailte"
 
 #: libretranslate/templates/index.html:10
 #: libretranslate/templates/index.html:31
 msgid ""
-"Free and Open Source Machine Translation API. Self-hosted, offline capable "
-"and easy to setup. Run your own API server in just a few minutes."
+"Free and Open Source Machine Translation API. Self-hosted, offline "
+"capable and easy to setup. Run your own API server in just a few minutes."
 msgstr ""
-"Brezplačno in odprtokodno strojno prevajanje API. Samo-gostitelj, brez "
-"povezave sposoben in enostaven za namestitev. Poženite svoj API strežnik v "
-"samo nekaj minutah."
+"API saor airson eadar-theangachadh inneil le bun-tùs fosgailte. Òstaichidh "
+"tu fhèin is cleachdaidh far loidhne thu e is tha e furasta a shuidheachadh."
 
 #: libretranslate/templates/index.html:11
 msgid "translation"
-msgstr "prevod"
+msgstr "eadar-theangachadh"
 
 #: libretranslate/templates/index.html:11
 msgid "api"
@@ -606,11 +615,11 @@ msgstr "api"
 
 #: libretranslate/templates/index.html:67
 msgid "API Docs"
-msgstr "API Docs"
+msgstr "Docamaideadh an API"
 
 #: libretranslate/templates/index.html:69
 msgid "Get API Key"
-msgstr "Dobi API Ključ"
+msgstr "Faigh iuchair API"
 
 #: libretranslate/templates/index.html:71
 msgid "GitHub"
@@ -618,119 +627,120 @@ msgstr "GitHub"
 
 #: libretranslate/templates/index.html:73
 msgid "Set API Key"
-msgstr "Nastavi API Ključ"
+msgstr "Suidhich iuchair API"
 
 #: libretranslate/templates/index.html:75
 msgid "Change language"
-msgstr "Spremeni jezik"
+msgstr "Atharraich an cànan"
 
 #: libretranslate/templates/index.html:81
 msgid "Edit"
-msgstr "Uredi"
+msgstr "Deasaich"
 
 #: libretranslate/templates/index.html:83
 msgid "Toggle dark/light mode"
-msgstr "Preklopi temen/lahek način"
+msgstr "Toglaich am modh dorcha/soilleir"
 
 #: libretranslate/templates/index.html:159
 msgid "Dismiss"
-msgstr "Prosto"
+msgstr "Leig seachad"
 
 #: libretranslate/templates/index.html:173
 msgid "Translation API"
-msgstr "Prevod API"
+msgstr "API eadar-theangachaidh"
 
 #: libretranslate/templates/index.html:177
 msgid "Translate Text"
-msgstr "Prevedi besedilo"
+msgstr "Eadar-theangaich teacsa"
 
 #: libretranslate/templates/index.html:181
 msgid "Translate Files"
-msgstr "Prevedi datoteke"
+msgstr "Eadar-theangaich faidhlichean"
 
 #: libretranslate/templates/index.html:187
 msgid "Translate from"
-msgstr "Prevedi iz"
+msgstr "Eadar-theangaich o"
 
 #: libretranslate/templates/index.html:197
 msgid "Swap source and target languages"
-msgstr "Zamenjaj izvorne in ciljne jezike"
+msgstr "Cuir na cànanan tùsail is ri eadar-theangachadh an àite a chèile"
 
 #: libretranslate/templates/index.html:200
 msgid "Translate into"
-msgstr "Prevedi v"
+msgstr "Eadar-theangaich gu"
 
 #: libretranslate/templates/index.html:212
 msgid "Text to translate"
-msgstr "Besedilo za prevajanje"
+msgstr "An teacsa ri eadar-theangachadh"
 
 #: libretranslate/templates/index.html:215
 msgid "Delete text"
-msgstr "Zbriši besedilo"
+msgstr "Sguab às an teacsa"
 
 #: libretranslate/templates/index.html:228
 msgid "Suggest translation"
-msgstr "Predlog za prevod"
+msgstr "Mol eadar-theangachadh"
 
 #: libretranslate/templates/index.html:232
 msgid "Cancel"
-msgstr "Prekliči"
+msgstr "Sguir dheth"
 
 #: libretranslate/templates/index.html:235
 msgid "Send"
-msgstr "Pošlji"
+msgstr "Cuir"
 
 #: libretranslate/templates/index.html:251
 msgid "Supported file formats:"
-msgstr "Podprti formati datotek:"
+msgstr "Fòrmatan faidhle ris a chuir sinn taic:"
 
 #: libretranslate/templates/index.html:255
 msgid "File"
-msgstr "Datoteka"
+msgstr "Faidhle"
 
 #: libretranslate/templates/index.html:270
 msgid "Remove file"
-msgstr "Odstrani datoteko"
+msgstr "Thoir am faidhle air falbh"
 
 #: libretranslate/templates/index.html:277
 msgid "Translate"
-msgstr "Prevedi"
+msgstr "Eadar-theangaich"
 
 #: libretranslate/templates/index.html:278
 #: libretranslate/templates/index.html:322
 msgid "Download"
-msgstr "Prenesi"
+msgstr "Luchdaich a-nuas"
 
 #: libretranslate/templates/index.html:297
 msgid "Request"
-msgstr "Zahtevek"
+msgstr "Iarrtas"
 
 #: libretranslate/templates/index.html:302
 msgid "Response"
-msgstr "Odziv"
+msgstr "Freagairt"
 
 #: libretranslate/templates/index.html:317
 msgid "Open Source Machine Translation API"
-msgstr "API za prevajanje odprtokodnega stroja"
+msgstr "API airson eadar-theangachadh inneil le bun-tùs fosgailte"
 
 #: libretranslate/templates/index.html:318
 msgid "Self-Hosted. Offline Capable. Easy to Setup."
-msgstr "Samosvoj. Nesposobna. Enostavna nastavitev."
+msgstr "Òstaich thu fhèin e. Comas far loidhne. Furasta a shuidheachadh."
 
 #: libretranslate/templates/index.html:337
 msgid "LibreTranslate"
-msgstr "LibrePrevajanje"
+msgstr "LibreTranslate"
 
 #: libretranslate/templates/index.html:339
 msgid "License:"
-msgstr "Licenca:"
+msgstr "Ceadachas:"
 
 #: libretranslate/templates/index.html:345
 #, python-format
 msgid "Made with %(heart)s by %(contributors)s and powered by %(engine)s"
-msgstr "Narejeno z %(heart)s z %(contributors)s in napajajo %(engine)s"
+msgstr ""
+"Chaidh a dhèanamh le %(heart)s le %(contributors)s ’s le cumhachd %(engine)s"
 
 #: libretranslate/templates/index.html:345
 #, python-format
 msgid "%(libretranslate)s Contributors"
-msgstr "%(libretranslate)s Prispevki"
+msgstr "Co-thabhartaichean %(libretranslate)s"
