@@ -47,6 +47,6 @@ spec:
     requests:
       storage: {{ .Values.storage.size }}
   storageClassName: {{ .Values.storage.storageClassName }}
-  {{ if .Values.storage.persistentVolume }}
+  {{ if .Values.storage.persistentVolume.enabled }}
   volumeName: {{ .Values.namespace }}-libretranslate-data
   {{ end }}
