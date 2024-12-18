@@ -19,7 +19,7 @@ spec:
         ports:
         - containerPort: 5000
         volumeMounts:
-        - name: libretranslate-data
+        - name: {{ .Values.namespace }}-libretranslate-data
           mountPath: /home/libretranslate/.local
         env:
         - name: LT_UPDATE_MODELS
