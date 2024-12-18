@@ -71,7 +71,7 @@ spec:
         - name: eaera-acr
 
       volumes:
-      - name: libretranslate-data
+      - name: {{ .Values.namespace }}-libretranslate-data
         persistentVolumeClaim:
-          claimName: {{ .Values.namespace }}-libretranslate-data
+          claimName: libretranslate-data
       
