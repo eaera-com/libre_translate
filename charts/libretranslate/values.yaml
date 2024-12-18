@@ -1,17 +1,17 @@
 namespace: libretranslate
-domain: sea2.eaera.com
+domain: hn.eaera.com
 ingress:
-  host: libretranslate.sea2.eaera.com
+  host: libretranslate.hn.eaera.com
 storage:
   size: 32Gi
-  storageClassName: premium2-disk-sc
-  persistentVolume:
-    enabled: true
-    volumeHandle: /subscriptions/ca345c4a-2897-4c58-abce-a7598b1630cb/resourceGroups/MC_rg-eaera-sea_eaera-sea-2_southeastasia/providers/Microsoft.Compute/disks/LibreTranslateData
+  storageClassName: openebs-hostpath
+  # persistentVolume:
+  #   enabled: true
+  #   volumeHandle: /subscriptions/ca345c4a-2897-4c58-abce-a7598b1630cb/resourceGroups/MC_rg-eaera-sea_eaera-sea-2_southeastasia/providers/Microsoft.Compute/disks/LibreTranslateData
   dbNodeAffinity:
-  - key: topology.disk.csi.azure.com/zone
-    operator: In
-    value: southeastasia-2
+    - key: kubernetes.io/hostname
+      operator: In
+      value: hn-worker-3
 tolerations:
 - key: agentpool
   operator: Equal
