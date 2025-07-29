@@ -155,16 +155,19 @@ def filter_unique(seq, extra):
     return [x for x in seq if not (x in seen or seen_add(x))]
 
 def extract_text(q: dict):
-    # Recusive extract text from dict
+    # Recursive extract text from dict
     results = []
     for k, v in q.items():
         if isinstance(v, dict):
             results.extend(extract_text(v))
         elif isinstance(v, list):
             for i in v:
-                results.extend(extract_text(i))
-            else:
-                results.append(v)
+                if isinstance(i, dict):
+                    results.extend(extract_text(i))
+                else:
+                    results.append(i)
+        else:
+            results.append(v)
     return results
 
 def translate_dict(translator, q: dict, num_alternatives: int, text_format: str = "text"):
@@ -172,18 +175,43 @@ def translate_dict(translator, q: dict, num_alternatives: int, text_format: str 
     alternatives = {}
     for k, v in q.items():
         if isinstance(v, dict):
-            translated[k], alternatives[k] = translate_dict(translator, v, num_alternatives)
+            translated[k], alternatives[k] = translate_dict(translator, v, num_alternatives, text_format)
         elif isinstance(v, list):
+            translated_list = []
+            alternatives_list = []
             for i in v:
-                translated[k], alternatives[k] = translate_dict(translator, i, num_alternatives)
+                if isinstance(i, dict):
+                    trans_item, alt_item = translate_dict(translator, i, num_alternatives, text_format)
+                    translated_list.append(trans_item)
+                    alternatives_list.append(alt_item)
+                else:
+                    if i is None or i == "":
+                        translated_list.append(i)
+                        alternatives_list.append([])
+                    else:
+                        if text_format == "html":
+                            translated_text = unescape(str(translate_html(translator, str(i))))
+                            alternatives_text = []
+                        else:
+                            hypotheses = translator.hypotheses(str(i), num_alternatives + 1)
+                            translated_text = unescape(improve_translation_formatting(str(i), hypotheses[0].value))
+                            alternatives_text = filter_unique([unescape(improve_translation_formatting(str(i), hypotheses[j].value)) for j in range(1, len(hypotheses))], translated_text)
+                        translated_list.append(translated_text)
+                        alternatives_list.append(alternatives_text)
+            translated[k] = translated_list
+            alternatives[k] = alternatives_list
         else:
-            if text_format == "html":
-                translated[k] = unescape(str(translate_html(translator, v)))
+            if v is None or v == "":
+                translated[k] = v
                 alternatives[k] = []
             else:
-                hypotheses = translator.hypotheses(v, num_alternatives + 1)
-                translated[k] = unescape(improve_translation_formatting(v, hypotheses[0].value))
-                alternatives[k] = filter_unique([unescape(improve_translation_formatting(v, hypotheses[i].value)) for i in range(1, len(hypotheses))], translated[k])
+                if text_format == "html":
+                    translated[k] = unescape(str(translate_html(translator, str(v))))
+                    alternatives[k] = []
+                else:
+                    hypotheses = translator.hypotheses(str(v), num_alternatives + 1)
+                    translated[k] = unescape(improve_translation_formatting(str(v), hypotheses[0].value))
+                    alternatives[k] = filter_unique([unescape(improve_translation_formatting(str(v), hypotheses[i].value)) for i in range(1, len(hypotheses))], translated[k])
     return translated, alternatives    
 
 def create_app(args):
