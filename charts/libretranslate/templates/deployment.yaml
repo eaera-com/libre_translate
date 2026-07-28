@@ -18,6 +18,11 @@ spec:
         image: {{ .Values.image | default (print "eaera.azurecr.io/eaera-com/libre_translate:main.latest") }}
         ports:
         - containerPort: 5000
+        resources:
+          requests:
+            cpu: 500m
+          limits:
+            cpu: 500m
         volumeMounts:
         - name: {{ .Values.namespace }}-libretranslate-data
           mountPath: /home/libretranslate/.local
